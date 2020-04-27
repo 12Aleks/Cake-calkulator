@@ -31,10 +31,13 @@
                      </tr>
                      <tr  v-for="(layer, index) in layers">
                          <td>
-                             {{index}}
+                             <select  class="form-control" v-model="layers[index].type">
+                                 <option :value="key"
+                                  v-for="(lt, key) in layersType" >{{lt.label}}</option>
+                             </select>
                          </td>
                          <td>
-                             <input type="number" class="form-control" v-model="layers[index].height">
+                             <input type="number" class="form-control" v-model.number="layers[index].height">
                          </td>
                          <td>
 
