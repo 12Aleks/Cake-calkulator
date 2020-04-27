@@ -1,0 +1,12 @@
+{
+  "name": "routerapp",
+  "description": "A Vue.js project with routing",
+  "version": "1.0.0",
+  "author": "Eugene <metanit.com>",
+  "scripts": {
+    "start": "lite-server"
+  },
+  "devDependencies": {
+    "lite-server": "^2.2.1"
+  }
+}
